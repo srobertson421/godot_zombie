@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/src_assets_outofammo.mp3-4129234681679061743ce85f88f833e4.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/src_assets_outofammo.mp3"
+dest_files=[ "res://.import/src_assets_outofammo.mp3-4129234681679061743ce85f88f833e4.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

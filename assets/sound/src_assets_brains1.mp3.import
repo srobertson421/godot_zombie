@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/src_assets_brains1.mp3-02d9d4de85d12f0d011bf47e96215135.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/src_assets_brains1.mp3"
+dest_files=[ "res://.import/src_assets_brains1.mp3-02d9d4de85d12f0d011bf47e96215135.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/src_assets_groan.mp3-e162616f250ddcca86c574aa076a2185.mp3str"
+
+[deps]
+
+source_file="res://assets/sound/src_assets_groan.mp3"
+dest_files=[ "res://.import/src_assets_groan.mp3-e162616f250ddcca86c574aa076a2185.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

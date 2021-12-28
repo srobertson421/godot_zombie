@@ -31,3 +31,4 @@ func _process(delta):
 		var bullet = Bullet.instance()
 		owner.add_child(bullet)
 		bullet.transform = $HandgunPosition.global_transform
+		$GunSound.play()
