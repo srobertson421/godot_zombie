@@ -30,5 +30,4 @@ func _process(delta):
 	if Input.is_action_just_pressed("shoot"):
 		var bullet = Bullet.instance()
 		owner.add_child(bullet)
-		bullet.scale = Vector2(-1, 1)
 		bullet.transform = $HandgunPosition.global_transform
