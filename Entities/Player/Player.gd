@@ -22,7 +22,7 @@ func _process(delta):
 		
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
-	
+		
 	position += velocity * delta
 	
 	look_at(get_global_mouse_position())
