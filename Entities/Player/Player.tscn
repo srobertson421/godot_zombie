@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://assets/shooter/survivor-idle_handgun_0.png" type="Texture" id=1]
 [ext_resource path="res://assets/shooter/survivor-idle_handgun_1.png" type="Texture" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://Entities/Bullet/Bullet.tscn" type="PackedScene" id=22]
 [ext_resource path="res://assets/sound/src_assets_pistol.mp3" type="AudioStream" id=23]
 [ext_resource path="res://assets/flashlight.png" type="Texture" id=24]
+[ext_resource path="res://assets/LightSprite.png" type="Texture" id=25]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -42,7 +43,7 @@ Bullet = ExtResource( 22 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 1 )
 animation = "handgun"
-frame = 7
+frame = 13
 playing = true
 
 [node name="HandgunPosition" type="Position2D" parent="."]
@@ -51,11 +52,17 @@ position = Vector2( 51, 28 )
 [node name="GunSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 23 )
 
-[node name="Light2D" type="Light2D" parent="."]
-visible = false
-position = Vector2( 44, 16 )
-scale = Vector2( 1.38542, 1 )
+[node name="Flashlight" type="Light2D" parent="."]
+position = Vector2( 223, 35 )
+scale = Vector2( 0.281771, 0.5 )
 texture = ExtResource( 24 )
 offset = Vector2( 200, 0 )
-texture_scale = 1.5
+range_item_cull_mask = 3
 shadow_enabled = true
+shadow_filter = 5
+shadow_filter_smooth = 5.0
+
+[node name="BodyLight" type="Light2D" parent="."]
+texture = ExtResource( 25 )
+energy = 0.75
+range_item_cull_mask = 3
